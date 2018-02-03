@@ -250,9 +250,6 @@ telephony.lteOnCdmaDevice=1
 vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=false
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Platform
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6115
