@@ -181,6 +181,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
