@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
     DialerOverlayChime \
     FrameworksResOverlayChime \
+    NotchBarKillerChime \
     SettingsOverlayChime \
     SystemUIOverlayChime \
     TelephonyOverlayChime
