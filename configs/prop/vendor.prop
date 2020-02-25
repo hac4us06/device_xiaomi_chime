@@ -211,6 +211,9 @@ persist.data.df.mux_count=8
 persist.data.df.iwlan_mux=9
 persist.data.df.dev_name=rmnet_usb0
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Radio
 persist.radio.multisim.config=dsds
 keyguard.no_require_sim=true
