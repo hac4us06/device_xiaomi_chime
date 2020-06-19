@@ -125,7 +125,6 @@ vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1 
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera
 persist.camera.gyro.android=0
 persist.camera.gyro.disable=1
 persist.vendor.camera.logInfoMask=false
