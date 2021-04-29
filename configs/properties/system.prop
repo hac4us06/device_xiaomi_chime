@@ -16,6 +16,9 @@ ro.surface_flinger.supports_background_blur=1
 # Dexopt
 dalvik.vm.dex2oat64.enabled=true
 
+# Camera
+log.tag.CHIUSECASE=ERROR
+
 # Charger
 ro.charger.disable_init_blank=true
 persist.vendor.quick.charge=1
