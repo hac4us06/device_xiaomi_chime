@@ -182,6 +182,9 @@ ART_BUILD_TARGET_DEBUG := false
 ART_BUILD_HOST_NDEBUG := true
 ART_BUILD_HOST_DEBUG := false
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
