@@ -70,8 +70,6 @@ on post-fs
     setrlimit 8 67108864 67108864
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
-    exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
 on post-fs-data
@@ -498,4 +496,3 @@ on property:sys.boot_completed=1
 ########### FTM end ##########
 ########### FTM end ##########
 ########### FTM end ##########
-
