@@ -389,12 +389,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
 
 # Power
-TARGET_PROVIDES_POWERHAL := true
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.2 \
     android.hardware.power@1.2.vendor \
     android.hardware.power-service.xiaomi-libperfmgr \
     libqti-perfd-client
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Preopt SystemUI.
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
