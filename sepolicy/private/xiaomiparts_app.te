@@ -1,5 +1,5 @@
 app_domain(xiaomiparts_app)
-
+typeattribute xiaomiparts_app mlstrustedsubject;
 binder_call(xiaomiparts_app, gpuservice)
 
 allow xiaomiparts_app {
