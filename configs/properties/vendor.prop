@@ -221,6 +221,9 @@ ro.vendor.extension_library=libqti-perfd-client.so
 ro.vendor.perf-hal.ver=2.2
 ro.vendor.perf.scroll_opt=true
 
+# Printk
+persist.vendor.console.silent.config=1
+
 # Radio
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
