@@ -2,6 +2,10 @@
 arm64.memtag.process.system_server=off
 
 # Bluetooth
+persist.vendor.btstack.enable.lpa=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
+persist.vendor.bt.a2dp.hal.implementation=true
 vendor.bluetooth.soc=cherokee
 
 # Blur
