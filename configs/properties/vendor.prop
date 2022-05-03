@@ -206,6 +206,9 @@ keyguard.no_require_sim=true
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
 
+# Multi-Gen LRU
+persist.device_config.mglru_native.lru_gen_config=all
+
 # NFC
 ro.camera.notify_nfc=1
 
