@@ -420,6 +420,10 @@ on boot
     # Touchpanel
     chown system system /sys/touchpanel/double_tap
 
+    # Set SPI infrared radiator permission
+    chown system system /dev/ir_spi
+    chmod 0660 /dev/ir_spi
+
 on property:sys.boot_completed=1
     rm /data/unencrypted/zram_swap
     swapon_all /vendor/etc/fstab.qcom
