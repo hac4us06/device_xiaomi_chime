@@ -112,6 +112,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728
