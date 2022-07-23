@@ -24,10 +24,11 @@ PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayChime \
+    SettingsOverlayChime \
+    SystemUIOverlayChime \
+    TelephonyOverlayChime
 
 PRODUCT_PACKAGES += \
     CitrusAboutOverlay \
@@ -406,6 +407,13 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
+
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResOverlayChime \
+    SettingsOverlayChime \
+    SystemUIOverlayChime \
+    TelephonyOverlayChime
 
 # Perf
 PRODUCT_PACKAGES += \
