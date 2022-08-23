@@ -215,6 +215,7 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
     group system
+    task_profiles ServiceCapacityLow
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
@@ -222,11 +223,13 @@ service vendor.per_mgr /vendor/bin/pm-service
     user system
     group system
     ioprio rt 4
+    task_profiles ServiceCapacityLow
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
+    task_profiles ServiceCapacityLow
     disabled
 
 service vendor.mdm_helper /vendor/bin/mdm_helper
