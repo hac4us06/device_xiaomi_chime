@@ -190,8 +190,8 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 persist.backup.ntpServer=0.pool.ntp.org
 
 # HWUI
-debug.hwui.renderer=opengl
-debug.renderengine.backend=gles
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
 
 # Keystore
 keyguard.no_require_sim=true
