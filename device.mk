@@ -30,12 +30,6 @@ PRODUCT_PACKAGES += \
     SystemUIOverlayChime \
     TelephonyOverlayChime
 
-PRODUCT_PACKAGES += \
-    CitrusAboutOverlay \
-    LemonAboutOverlay \
-    LimeAboutOverlay \
-    PomeloAboutOverlay
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
