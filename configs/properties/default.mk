@@ -27,6 +27,13 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.use_color_management=true \
     ro.surface_flinger.wcg_composition_dataspace=143261696
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    debug.sf.enable_advanced_sf_phase_offset=1 \
+    debug.sf.high_fps_early_gl_phase_offset_ns=-2000000 \
+    debug.sf.high_fps_early_phase_offset_ns=-5000000 \
+    debug.sf.high_fps_late_app_phase_offset_ns=1000000 \
+    debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
+
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     pm.dexopt.boot=verify \
