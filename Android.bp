@@ -1,8 +1,13 @@
 //
-// Copyright (C) 2023 Lilium Project
+// Copyright (C) 2024 The LineageOS Project
 //
 // SPDX-License-Identifier: Apache-2.0
 //
 
 soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/xiaomi",
+    ],
 }
