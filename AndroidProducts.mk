@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_chime.mk
+    $(LOCAL_DIR)/cherish_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_chime-user \
-    evolution_chime-userdebug \
-    evolution_chime-eng
+    cherish_chime-user \
+    cherish_chime-userdebug \
+    cherish_chime-eng

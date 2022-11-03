@@ -1,0 +1,2 @@
+ERR 2022-11-03T19:55:37.048 nvim.7524.0 terminfo_start:359: uv_tty_set_mode failed: invalid argument
+ERR 2022-11-03T19:57:03.882 nvim.7900.0 terminfo_start:359: uv_tty_set_mode failed: invalid argument
