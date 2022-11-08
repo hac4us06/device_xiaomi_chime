@@ -34,5 +34,5 @@ WITH_GMS := true
 
 # Maintainer Stuff
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=hungphan2001
+    ro.cherish.maintainer=Chikoni_UwU
 CHERISH_BUILD_TYPE := OFFICIAL
