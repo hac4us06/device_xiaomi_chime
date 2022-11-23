@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_chime.mk
+    $(LOCAL_DIR)/derp_chime.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_chime-user \
-    cherish_chime-userdebug \
-    cherish_chime-eng
+    derp_chime-user \
+    derp_chime-userdebug \
+    derp_chime-eng
