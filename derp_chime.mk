@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/chime/device.mk)
 $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+USE_LEGACY_BOOTANIMATION := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_chime
