@@ -257,10 +257,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
-# Google Battery HAL
-PRODUCT_PACKAGES += \
-    vendor.google.google_battery@1.1
-
 # GPS
 PRODUCT_PACKAGES += \
      android.hardware.gnss@2.1-impl-qti \
