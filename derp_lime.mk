@@ -12,6 +12,11 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 USE_LEGACY_BOOTANIMATION := true
 DERP_BUILDTYPE := Official
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := derp_lime
