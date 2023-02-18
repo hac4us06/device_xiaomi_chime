@@ -38,6 +38,16 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
+# Add missing classes
+PRODUCT_PACKAGES += \
+    pasrservice \
+    PerformanceMode \
+    PowerSaveMode \
+    workloadclassifier \
+    QPerformance \
+    QXPerformance \
+    UxPerformance
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
