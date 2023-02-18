@@ -47,7 +47,8 @@ PRODUCT_PACKAGES += \
     QPerformance \
     QXPerformance \
     UxPerformance
-
+#add more
+PRODUCT_BOOT_JARS += QPerformance QXPerformance UxPerformance
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
