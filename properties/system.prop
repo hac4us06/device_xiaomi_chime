@@ -23,11 +23,6 @@ ro.hardware.fp.sideCap=true
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
-# IMS
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # LMKD
 ro.config.low_ram=false
 ro.lmk.log_stats=true
@@ -52,15 +47,12 @@ ro.netflix.bsp_rev=Q6115-31409-1
 # NFC DT
 ro.nfc.port=I2C
 
-# NTP
-persist.backup.ntpServer=0.pool.ntp.org
-
-# Perf
-ro.vendor.qti.core_ctl_max_cpu=4
-ro.vendor.qti.core_ctl_min_cpu=2
-
 # Radio
 persist.vendor.radio.report_codec=1
+persist.sys.fflag.override.settings_provider_model=false
+rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
+ril.subscription.types=NV,RUIM
+ro.telephony.default_network=22,20
 
 # Rescue Party
 persist.device_config.configuration.disable_rescue_party=true
