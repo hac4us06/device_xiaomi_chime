@@ -8,7 +8,7 @@
     <bool name="config_wifi_background_scan_support">true</bool>
     <bool name="config_wifi_batched_scan_supported">true</bool>
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
-    <bool name="config_wifi_dual_sap_mode_enabled">true</bool>
+    <bool name="config_wifi_dual_sap_mode_enabled">false</bool>
     <bool name="config_wifi_only_link_same_credential_configurations">false</bool>
     <bool name="config_wifi_p2p_mac_randomization_supported">true</bool>
     <bool name="config_wifi_report_he_ready">true</bool>
