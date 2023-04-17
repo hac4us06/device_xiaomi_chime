@@ -123,6 +123,7 @@ vendor.qcom.bluetooth.soc=cherokee
 af.fast_track_multiplier=1
 camera.disable_zsl_mode=1
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.aperture,org.lineageos.aperture.dev
+persist.vendor.camera.perflock.enable=0
 
 # CNE
 persist.vendor.cne.feature=1
