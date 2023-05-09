@@ -19,5 +19,4 @@ git clone https://gitlab.com/hac4us06/vendor-xiaomi-citrus-13 -b lineage-20 vend
 git clone https://gitlab.com/hac4us06/vendor-xiaomi-lime-13 -b lineage-20 vendor/xiaomi/lime
 
 # Hardware
-rm -rf hardware/xiaomi
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
+git clone https://github.com/hac4us06/hardware_xiaomi13 -b thirteen hardware/xiaomi
