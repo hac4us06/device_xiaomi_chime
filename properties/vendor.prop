@@ -220,7 +220,7 @@ debug.sf.disable_client_composition_cache=1
 
 # Google WFD settings
 persist.debug.wfd.enable=1
-debug.sf.enable_hwc_vds=1
+debug.sf.enable_hwc_vds=0
 persist.sys.wfd.virtual=0
 
 # Keystore
