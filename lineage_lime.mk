@@ -8,14 +8,35 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Alpha prop
+
+#ALPHA_BUILD_TYPE := Official
+
+ 
+
+ALPHA_MAINTAINER := IczYn
+
+ 
+
+# Alpha device prop
+
 TARGET_ENABLE_BLUR := true
 
+TARGET_INCLUDE_MATLOG := false
+
+TARGET_USE_GRAPHENE_CAMERA := true
+
+TARGET_USE_PIXEL_LAUNCHER := false
+
+TARGET_EXCLUDES_AUDIOFX := true
+
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := awaken_lime
+PRODUCT_NAME := lineage_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T

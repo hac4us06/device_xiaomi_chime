@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_citrus.mk \
-    $(LOCAL_DIR)/awaken_lime.mk
+    $(LOCAL_DIR)/lineage_citrus.mk \
+    $(LOCAL_DIR)/lineage_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_citrus-user \
-    awaken_citrus-userdebug \
-    awaken_citrus-eng \
-    awaken_lime-user \
-    awaken_lime-userdebug \
-    awaken_lime-eng
+    lineage_citrus-user \
+    lineage_citrus-userdebug \
+    lineage_citrus-eng \
+    lineage_lime-user \
+    lineage_lime-userdebug \
+    lineage_lime-eng
