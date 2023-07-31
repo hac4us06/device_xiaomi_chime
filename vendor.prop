@@ -260,13 +260,6 @@ ro.ril.fast.dormancy.rule=1
 ro.ril.fast.dormancy.timeout=3
 ro.mot.eri.losalert.delay=1000
 
-# PASR
-vendor.pasr.activemode.enabled=true
-vendor.power.pasr.enabled=false
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-
 # Platform
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6115
