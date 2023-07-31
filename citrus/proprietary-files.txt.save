@@ -57,13 +57,20 @@ vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libcamera_scene.so
 vendor/lib64/libcamerapostproc.so
 vendor/lib64/libcapiv2svacnn.so
+<<<<<<< HEAD
+=======
 vendor/lib64/libcapiv2svarnn.so
+>>>>>>> 61b7bce (chime: Separate builds for Redmi 9T and POCO M3, and update blobs from MIUI 14)
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/libdng_sdk2vendor.so
 vendor/lib64/libft2vendor.so
+<<<<<<< HEAD
+vendor/lib64/libicuuc.so
+=======
 vendor/lib64/libicuucts.so
+>>>>>>> 61b7bce (chime: Separate builds for Redmi 9T and POCO M3, and update blobs from MIUI 14)
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
@@ -193,7 +200,10 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/MIUI_Time.ttf
 vendor/etc/camera/Miui-Light.ttf
 vendor/etc/camera/Roboto-Thin.ttf
+<<<<<<< HEAD
+=======
 vendor/etc/camera/camxoverridesettings.txt
+>>>>>>> 61b7bce (chime: Separate builds for Redmi 9T and POCO M3, and update blobs from MIUI 14)
 vendor/etc/camera/com.xiaomi.dcal.wd.golden
 vendor/etc/camera/female_bg.png
 vendor/etc/camera/female_icon.png
