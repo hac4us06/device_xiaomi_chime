@@ -249,13 +249,6 @@ telephony.lteOnCdmaDevice=1
 ro.soc.manufacturer=QTI
 ro.soc.model=SM6115
 
-# Sensor
-persist.vendor.sensors.debug.ssc_qmi_debug=true
-persist.vendor.sensors.enable.bypass_worker=true
-persist.vendor.sensors.enable.rt_task=false
-persist.vendor.sensors.hal_trigger_ssr=false
-persist.vendor.sensors.support_direct_channel=false
-
 # USB
 vendor.usb.diag.func.name=diag
 vendor.usb.dpl.inst.name=dpl
