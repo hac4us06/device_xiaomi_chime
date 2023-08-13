@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_citrus.mk \
-    $(LOCAL_DIR)/halcyon_lime.mk
+    $(LOCAL_DIR)/aosp_citrus.mk \
+    $(LOCAL_DIR)/aosp_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    halcyon_citrus-user \
-    halcyon_citrus-userdebug \
-    halcyon_citrus-eng \
-    halcyon_lime-user \
-    halcyon_lime-userdebug \
-    halcyon_lime-eng
+    aosp_citrus-user \
+    aosp_citrus-userdebug \
+    aosp_citrus-eng \
+    aosp_lime-user \
+    aosp_lime-userdebug \
+    aosp_lime-eng
