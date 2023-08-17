@@ -281,6 +281,12 @@ persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 persist.vendor.radio.redir_party_num=1
 persist.vendor.radio.sib16_support=1
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=1000
 
 # RmNet Data
 persist.rmnet.data.enable=true
