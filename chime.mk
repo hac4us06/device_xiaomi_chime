@@ -106,6 +106,9 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     libgui_vendor
 
+PRODUCT_PACKAGES += \
+    GCamGo
+
 # Component overrides
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
