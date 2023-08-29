@@ -1,4 +1,132 @@
 <compatibility-matrix version="2.0" type="framework">
+<hal format="hidl" optional="true">
+      <name>android.hardware.audio.effect</name>
+        <version>6.0</version>
+        <interface>
+            <name>IEffectsFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.cas</name>
+        <version>1.2</version>
+        <interface>
+            <name>IMediaCasService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.bluetooth.audio</name>
+        <version>2.0</version>
+        <interface>
+            <name>IBluetoothAudioProviderFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.audio.effect</name>
+        <version>6.0</version>
+        <interface>
+            <name>IDevicesFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.drm.IDrmFactory</name>
+        <version>1.0</version>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>clearkey</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.drm</name>
+        <version>1.3</version>
+        <interface>
+            <name>ICryptoFactory</name>
+            <instance>widevine</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.drm</name>
+        <version>1.3</version>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>widevine</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.gnss</name>
+        <version>2.1</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.health</name>
+        <version>2.1</version>
+        <interface>
+            <name>IHealth</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.light</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILights</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.neuralnetworks</name>
+        <version>1.3</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>qti-default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.neuralnetworks</name>
+        <version>1.3</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>qti-gpu</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.neuralnetworks</name>
+        <version>1.3</version>
+        <interface>
+            <name>IDevice</name>
+            <instance>qti-dsp</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.power</name>
+        <version>3.0</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.radio</name>
+        <version>1.5</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot1</instance>
+        </interface>
+    </hal>
+<hal format="hidl" optional="true">
+      <name>android.hardware.radio</name>
+        <version>1.5</version>
+        <interface>
+            <name>IRadio</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.gnss</name>
         <version>1.0</version>
