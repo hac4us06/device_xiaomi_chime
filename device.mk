@@ -209,6 +209,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     org.ifaa.android.manager
 
+# Init
+PRODUCT_PACKAGES += \
+    init.mi_thermald.rc
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
@@ -486,8 +490,7 @@ PRODUCT_BOOT_JARS += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.qti
-
+    android.hardware.thermal@2.0
 # Touchscreen
 PRODUCT_PACKAGES += \
     libtinyxml2
