@@ -164,6 +164,7 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
+debug.sdm.support_writeback=0
 debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.enable_advanced_sf_phase_offset=1
