@@ -16,8 +16,8 @@ git clone https://github.com/hac4us06/kernel-xiaomi-chime-grass -b pyro-wip kern
 # Clone vendor
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_chime -b thirteen vendor/xiaomi/chime
 git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_chime-perf -b thirteen vendor/xiaomi/chime-perf
-git clone https://gitlab.com/chimeoss/vendor_xiaomi_citrus -b lineage-20 vendor/xiaomi/citrus
-git clone https://gitlab.com/chimeoss/vendor_xiaomi_lime -b lineage-20 vendor/xiaomi/lime
+git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_citrus.git -b thirteen vendor/xiaomi/citrus
+git clone https://gitlab.pixelexperience.org/android/vendor-blobs/vendor_xiaomi_lime.git -b thirteen vendor/xiaomi/lime
 
 # Hardware
 git clone https://github.com/hac4us06/hardware_xiaomi -b thirteen hardware/xiaomi
