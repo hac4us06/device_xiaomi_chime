@@ -95,7 +95,7 @@ vendor/lib/soundfx/libshoebox.so
 # Audio HAL
 vendor/lib/libaudio_log_utils.so
 
-<<<<<<< HEAD
+
 # Audio Libraries
 vendor/lib/liba2dpoffload.so
 vendor/lib/libacdb-fts.so
@@ -120,11 +120,12 @@ vendor/lib/libsndmonitor.so
 vendor/lib/libspkrprot.so
 vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
-=======
+
 # Display config
 system_ext/lib/libgralloc.system.qti.so
 system_ext/lib/libqdMetaData.system.so
-system_ext/lib/libdisplayconfig.system.qti.so
+
+system_ext/lib/libdisplayconfig.system.qti
 system_ext/lib/vendor.display.config@1.0.so
 system_ext/lib/vendor.display.config@1.1.so
 system_ext/lib/vendor.display.config@1.2.so
@@ -143,7 +144,7 @@ system_ext/lib/vendor.display.config@1.14.so
 system_ext/lib/vendor.display.config@2.0.so
 system_ext/lib64/libgralloc.system.qti.so
 system_ext/lib64/libqdMetaData.system.so
-system_ext/lib64/libdisplayconfig.system.qti.so
+system_ext/lib64/libdisplayconfig.system.qti
 system_ext/lib64/vendor.display.config@1.0.so
 system_ext/lib64/vendor.display.config@1.1.so
 system_ext/lib64/vendor.display.config@1.2.so
@@ -160,7 +161,7 @@ system_ext/lib64/vendor.display.config@1.12.so
 system_ext/lib64/vendor.display.config@1.13.so
 system_ext/lib64/vendor.display.config@1.14.so
 system_ext/lib64/vendor.display.config@2.0.so
->>>>>>> 9c5ce9b (diting: add missing stuff for wfd)
+
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
