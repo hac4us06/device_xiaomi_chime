@@ -12,8 +12,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Alpha prop
 
-ALPHA_BUILD_TYPE := Official
-ALPHA_MAINTAINER := IczYn x Hac4us
+#ALPHA_BUILD_TYPE := Official
+ALPHA_MAINTAINER := IczYn_x_Hac4us
 
 # Device config
 TARGET_HAS_UDFPS := false
