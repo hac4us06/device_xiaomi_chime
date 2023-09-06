@@ -8,7 +8,7 @@ sleep 1
 
 
 # Clone kernel
-git clone https://github.com/hac4us06/kernel-xiaomi-chime-grass -b pyro-wip kernel/xiaomi/chime
+git clone https://github.com/hac4us06/kernel-xiaomi-electro -b main kernel/xiaomi/chime
 # Setup kernel
 (cd kernel/xiaomi/chime; git submodule init; git submodule update; sed -i 's/#ifdef CONFIG_KPROBES/#if 0/g' KernelSU/kernel/ksu.c)
 
