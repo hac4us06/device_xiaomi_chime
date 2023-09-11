@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Inherit some common Derpfest stuff stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/spark/config/common_full_phone.mk)
 
 # Alpha prop
 
@@ -39,7 +39,7 @@ TARGET_INCLUDE_MATLOG := false
 TARGET_DEFAULT_ADB_ENABLED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_citrus
+PRODUCT_NAME := spark_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3
