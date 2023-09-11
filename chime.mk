@@ -147,7 +147,7 @@ PRODUCT_PACKAGES += \
     memtrack.bengal \
     gralloc.bengal \
     hwcomposer.bengal \
-    libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
@@ -566,13 +566,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-# Wifi Display
-
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
+    libdisplayconfig.qti.vendor \
     libnl \
     libwfdaac_vendor
 
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.debug.wfd.enable=1 \
-    persist.sys.wfd.virtual=0
+PRODUCT_BOOT_JARS += \
+    WfdCommon

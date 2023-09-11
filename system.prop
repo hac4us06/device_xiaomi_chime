@@ -62,5 +62,9 @@ persist.sys.disable_rescue=true
 persist.vendor.ssr.enable_ramdumps=1
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Wireless Display
+persist.debug.wfd.enable=1
+persist.sys.wfd.virtual=0
+
 # Zygisk Preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
