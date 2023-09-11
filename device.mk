@@ -158,7 +158,7 @@ PRODUCT_PACKAGES += \
     memtrack.bengal \
     gralloc.bengal \
     hwcomposer.bengal \
-    libdisplayconfig \
+    libdisplayconfig.qti \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
@@ -550,3 +550,13 @@ PRODUCT_COPY_FILES += \
 # ZRAM
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.zram:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.zram
+
+# Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libdisplayconfig.system.qti \
+    libdisplayconfig.qti.vendor \
+    libnl \
+    libwfdaac_vendor
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
