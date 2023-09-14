@@ -472,6 +472,14 @@
         </interface>
     </hal>
      <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.perf</name>
+        <version>2.2</version>
+        <interface>
+            <name>IPerf</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.wifidisplaysession</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
