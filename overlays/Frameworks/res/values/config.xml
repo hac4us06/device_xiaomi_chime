@@ -936,4 +936,7 @@
         <item>2016-07-01</item> <!-- Build.SECURITY_PATCH -->
         <item>MCC24.246-37</item> <!-- Build.ID -->
     </string-array>
+
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
 </resources>
