@@ -114,7 +114,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
-    libstdc++.vendor \
+    libstdc++_vendor \
     libgui_vendor
 
 # Component overrides
