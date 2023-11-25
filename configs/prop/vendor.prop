@@ -189,6 +189,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# HWUI
+debug.hwui.renderer=opengl
+
 # Keystore
 keyguard.no_require_sim=true
 ro.hardware.keystore_desede=true
