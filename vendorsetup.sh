@@ -13,4 +13,4 @@ git clone https://www.opencode.net/liliumproject/vendor_xiaomi_citrus vendor/xia
 git clone https://www.opencode.net/liliumproject/vendor_xiaomi_lime vendor/xiaomi/lime
 
 # Hardware
-git clone https://github.com/hac4us06/android_hardware_xiaomi hardware/xiaomi 
+git clone https://github.com/hac4us06/android_hardware_xiaomi hardware/xiaomi
