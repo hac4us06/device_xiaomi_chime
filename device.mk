@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 Lilium Project
+# Copyright (C) 2023 LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
