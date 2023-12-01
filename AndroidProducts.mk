@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_citrus.mk \
-    $(LOCAL_DIR)/aosp_lime.mk
+    $(LOCAL_DIR)/derp_citrus.mk \
+    $(LOCAL_DIR)/derp_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_citrus-user \
-    aosp_citrus-userdebug \
-    aosp_citrus-eng \
-    aosp_lime-user \
-    aosp_lime-userdebug \
-    aosp_lime-eng
+    derp_citrus-user \
+    derp_citrus-userdebug \
+    derp_citrus-eng \
+    derp_lime-user \
+    derp_lime-userdebug \
+    derp_lime-eng
