@@ -21,3 +21,7 @@ bluetooth.profile.sap.server.enabled?=true
 
 # Camera
 vendor.camera.aux.packagelist=org.lineageos.snap,org.codeaurora.snapcam
+
+# Telephony
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
