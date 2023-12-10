@@ -485,6 +485,10 @@ on property:sys.boot_completed=1
     swapon_all /vendor/etc/fstab.zram
     write /proc/sys/vm/swappiness 100
 
+on early-init
+    # Start audio adsp rpc daemon at early init stage
+    start vendor.audioadsprpcd_audiopd
+
 ########### FTM end ##########
 ########### FTM end ##########
 ########### FTM end ##########
