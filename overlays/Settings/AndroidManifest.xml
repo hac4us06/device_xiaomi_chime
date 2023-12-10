@@ -2,5 +2,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     coreApp="true"
     package="com.android.settings.overlay.chime">
-    <overlay android:targetPackage="com.android.settings" android:isStatic="true" />
+    <overlay android:targetPackage="com.android.settings" android:isStatic="true" android:priority="100" />
 </manifest>
