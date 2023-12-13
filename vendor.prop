@@ -162,6 +162,7 @@ drm.service.enabled=true
 persist.backup.ntpServer=0.pool.ntp.org
 
 # Graphics
+debug.hwui.skia_atrace_enabled=false
 debug.sdm.support_writeback=0
 debug.egl.hw=0
 debug.mdpcomp.logs=0
