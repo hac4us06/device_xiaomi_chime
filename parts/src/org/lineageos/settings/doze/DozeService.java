@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2015 The CyanogenMod Project
- *               2017-2018 The LineageOS Project
+ *               2017-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,12 +25,25 @@ import android.content.IntentFilter;
 import android.os.IBinder;
 import android.util.Log;
 
+import org.lineageos.settings.sensors.PickupSensor;
+import org.lineageos.settings.sensors.ProximitySensor;
+
 public class DozeService extends Service {
     private static final String TAG = "DozeService";
     private static final boolean DEBUG = false;
 
     private ProximitySensor mProximitySensor;
     private PickupSensor mPickupSensor;
+    private BroadcastReceiver mScreenStateReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
+                onDisplayOn();
+            } else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
+                onDisplayOff();
+            }
+        }
+    };
 
     @Override
     public void onCreate() {
@@ -66,7 +79,8 @@ public class DozeService extends Service {
 
     private void onDisplayOn() {
         if (DEBUG) Log.d(TAG, "Display on");
-        if (DozeUtils.isPickUpEnabled(this)) {
+        if (DozeUtils.isPickUpEnabled(this) ||
+                DozeUtils.isRaiseToWakeEnabled(this)) {
             mPickupSensor.disable();
         }
         if (DozeUtils.isHandwaveGestureEnabled(this) ||
@@ -77,7 +91,8 @@ public class DozeService extends Service {
 
     private void onDisplayOff() {
         if (DEBUG) Log.d(TAG, "Display off");
-        if (DozeUtils.isPickUpEnabled(this)) {
+        if (DozeUtils.isPickUpEnabled(this) ||
+                DozeUtils.isRaiseToWakeEnabled(this)) {
             mPickupSensor.enable();
         }
         if (DozeUtils.isHandwaveGestureEnabled(this) ||
@@ -85,15 +100,4 @@ public class DozeService extends Service {
             mProximitySensor.enable();
         }
     }
-
-    private BroadcastReceiver mScreenStateReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-                onDisplayOn();
-            } else if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                onDisplayOff();
-            }
-        }
-    };
 }
