@@ -480,7 +480,11 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpu_boost/powerkey_input_boost_ms 2000
     write /sys/devices/system/cpu/cpu_boost/input_boost_ms 0
 
-on property:sys.boot_completed=1
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
+on property:vendor.post_boot.parsed=1
+
     # Enable ZRAM on boot_complete
     swapon_all /vendor/etc/fstab.zram
     write /proc/sys/vm/swappiness 100
