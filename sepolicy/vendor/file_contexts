@@ -35,6 +35,7 @@
 
 # Health
 /sys/devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify(/.*)?                                                                      u:object_r:vendor_sysfs_battery_supply:s0
+/vendor/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr      u:object_r:hal_power_default_exec:s0
 
 # IR
 /dev/lirc[0-9]                                                          u:object_r:lirc_device:s0

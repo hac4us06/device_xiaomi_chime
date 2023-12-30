@@ -31,6 +31,8 @@ BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/google/interfaces \
+    hardware/google/pixel \
     hardware/xiaomi
 
 # Product Shipping API
@@ -392,8 +394,7 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2 \
-    android.hardware.power@1.2.vendor \
-    android.hardware.power-service-qti
+    android.hardware.power-service.xiaomi-libperfmgr
 
 # Protobuf
 PRODUCT_PACKAGES += \
