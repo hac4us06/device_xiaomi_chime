@@ -191,6 +191,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # HWUI
 debug.hwui.renderer=opengl
+debug.renderengine.backend=gles
 
 # Keystore
 keyguard.no_require_sim=true
