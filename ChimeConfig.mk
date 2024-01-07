@@ -82,6 +82,9 @@ TARGET_USES_GRALLOC1 := true
 TARGET_USES_GRALLOC4 := true
 TARGET_USES_HWC2 := true
 
+# Disable Postrender Cleanup
+TARGET_DISABLE_POSTRENDER_CLEANUP := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 
