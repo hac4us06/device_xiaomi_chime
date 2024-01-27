@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 Lilium Project
+# Copyright (C) 2023 Genesis Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_citrus
+PRODUCT_NAME := genesis_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3

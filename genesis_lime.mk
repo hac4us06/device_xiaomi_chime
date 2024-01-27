@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 Lilium Project
+# Copyright (C) 2024 Genesis Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -8,7 +8,7 @@
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_lime
+PRODUCT_NAME := genesis_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T
