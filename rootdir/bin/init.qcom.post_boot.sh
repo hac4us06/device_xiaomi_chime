@@ -120,6 +120,15 @@ function 8917_sched_dcvs_eas()
         echo -6 >  /sys/devices/system/cpu/cpu2/sched_load_boost
         echo -6 >  /sys/devices/system/cpu/cpu3/sched_load_boost
 
+        # Check for less than 4GB RAM and set 200 swappiness
+        if [ "$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')" -le "4194304" ]; then
+            # Set swappiness to 200
+            echo 200 > /proc/sys/vm/swappiness
+        else
+            # Set swappiness to 100 for more than 4gb RAM
+            echo 100 > /proc/sys/vm/swappiness
+        fi
+
         # Enable bus-dcvs
         for device in /sys/devices/platform/soc
         do
