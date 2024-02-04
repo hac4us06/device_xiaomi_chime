@@ -548,7 +548,8 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libdisplayconfig.qti.vendor \
     libnl \
-    libwfdaac_vendor
+    libwfdaac_vendor \
+    vendor.qti.hardware.display.config-V5-ndk
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
