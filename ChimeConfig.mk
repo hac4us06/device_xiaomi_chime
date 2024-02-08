@@ -99,7 +99,7 @@ TARGET_HALS_PATH ?= hardware/qcom-caf/$(TARGET_BOARD_PLATFORM)
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/vintf/compatibility_matrix.xml
+DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
