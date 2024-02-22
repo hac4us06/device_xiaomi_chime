@@ -10,9 +10,10 @@ git clone https://github.com/hac4us06/kernel-xiaomi-electro -b 14 kernel/xiaomi/
 #(cd kernel/xiaomi/chime; cd KernelSU; git pull origin main; git reset --hard; cd ..; git add KernelSU)
 
 # Clone vendor
-git clone https://github.com/hac4us06/vendor_xiaomi_chime -b 13 vendor/xiaomi/chime
-git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus
-git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime
+git clone https://github.com/hac4us06/vendor_xiaomi_chime -b 13 vendor/xiaomi/chime  --depth=1
+git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus  --depth=1
+git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime  --depth=1
+git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b master hardware/samsung-ext/interfaces
 
 # Hardware
 git clone https://github.com/hac4us06/android_hardware_xiaomi -b 14 hardware/xiaomi
