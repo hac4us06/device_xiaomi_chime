@@ -12,6 +12,7 @@ git clone https://github.com/hac4us06/kernel-xiaomi-electro -b 14 kernel/xiaomi/
 git clone https://github.com/hac4us06/vendor_xiaomi_chime -b 13 vendor/xiaomi/chime  --depth=1
 git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus  --depth=1
 git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lime  --depth=1
+git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b master hardware/samsung-ext/interfaces
 
 # Hardware
 git clone https://github.com/hac4us06/hardware_xiaomi -b thirteen hardware/xiaomi  --depth=1
