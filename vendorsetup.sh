@@ -14,3 +14,4 @@ git clone https://www.opencode.net/liliumproject/vendor_xiaomi_lime vendor/xiaom
 
 # Hardware
 git clone https://github.com/hac4us06/android_hardware_xiaomi hardware/xiaomi 
+git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b lineage-22 hardware/samsung-ext/interfaces
