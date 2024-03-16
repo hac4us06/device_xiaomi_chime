@@ -567,6 +567,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libdisplayconfig.system.qti \
     libdisplayconfig.qti.vendor \
+    android.media.audio.common.types-V2-cpp \
     libnl \
     libwfdaac_vendor
 
