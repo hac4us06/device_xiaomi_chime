@@ -105,6 +105,9 @@ DEVICE_MATRIX_FILE := $(COMMON_PATH)/vintf/compatibility_matrix.xml
 HWUI_COMPILE_FOR_PERF := true
 USE_OPENGL_RENDERER := true
 
+# IMS
+BOARD_USES_LEGACY_IMS_SEPOLICY := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_chime
 TARGET_RECOVERY_DEVICE_MODULES := libinit_chime
