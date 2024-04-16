@@ -15,4 +15,4 @@ git clone https://github.com/hac4us06/vendor_xiaomi_lime -b 13 vendor/xiaomi/lim
 git clone https://github.com/Roynas-Android-Playground/hardware_samsung-extra_interfaces -b lineage-21 hardware/samsung-ext/interfaces
 
 # Hardware
-git clone https://github.com/hac4us06/hardware_xiaomi -b thirteen hardware/xiaomi  --depth=1
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi  --depth=1
