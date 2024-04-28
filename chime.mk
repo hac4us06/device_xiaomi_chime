@@ -406,6 +406,7 @@ PRODUCT_COPY_FILES += \
 # Preopt SystemUI.
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUIGoogle  # For internal
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
+PRODUCT_DEXPREOPT_SPEED_APPS += Settings
 
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.systemuicompilerfilter=speed
