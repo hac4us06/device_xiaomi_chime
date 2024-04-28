@@ -126,7 +126,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # DEX
-PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := space
+PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
 # Display
 PRODUCT_PACKAGES += \
