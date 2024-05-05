@@ -58,6 +58,11 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
             echo 'madvise: 1' >> ${2}
             ;;
+        vendor/lib64/libril-qc-hal-qmi.so)
+            for v in 1.{0..2}; do
+                sed -i "s|android.hardware.radio.config@${v}.so|android.hardware.radio.c_shim@${v}.so|g" "${2}"
+            done
+            ;;
     esac
 }
 

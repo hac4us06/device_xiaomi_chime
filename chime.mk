@@ -473,6 +473,12 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+PRODUCT_PACKAGES += \
+    android.hardware.radio.c_shim@1.0 \
+    android.hardware.radio.c_shim@1.1 \
+    android.hardware.radio.c_shim@1.2 \
+    android.hardware.radio.config@1.1-service.wrapper
+
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
