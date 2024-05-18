@@ -6,7 +6,9 @@
 
 soong_namespace {
      imports: [
-          "hardware/xiaomi"
+        "hardware/halcyon/interfaces/power-libperfmgr",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+        "hardware/xiaomi"
      ],
 }
 
