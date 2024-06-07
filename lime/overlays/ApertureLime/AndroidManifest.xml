@@ -4,7 +4,5 @@
 
     <overlay
         android:isStatic="true"
-        android:targetPackage="org.lineageos.aperture"
-        android:requiredSystemPropertyName="ro.product.model"
-        android:requiredSystemPropertyValue="M2010J19SG"/>
+        android:targetPackage="org.lineageos.aperture"/>
 </manifest>

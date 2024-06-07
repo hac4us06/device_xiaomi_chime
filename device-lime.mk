@@ -15,9 +15,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # RRO Overlays
 PRODUCT_PACKAGES += \
-    ApertureLime \
-    ApertureLemon \
-    AperturePomelo
+    ApertureLime
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/lime/lime-vendor.mk)
