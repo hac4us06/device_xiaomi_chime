@@ -41,7 +41,7 @@ static const variant_info_t pomelo_info = {
 
     .brand = "Redmi",
     .device = "pomelo",
-    .marketname = "Redmi 9 Power",
+    .marketname = "Redmi 9T",
     .model = "M2010J19SL",
     .build_fingerprint = "Redmi/lime_global/lime:12/RKQ1.211130.001/V14.0.5.0.SJQMIXM:user/release-keys",
 
