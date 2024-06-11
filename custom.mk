@@ -11,7 +11,7 @@ $(call inherit-product, vendor/genesis/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Officials Flag
-GENESIS_BUILDTYPE := Official
+GENESIS_OFFICIAL := true
 
 # Lineage Health
 PRODUCT_PACKAGES += \
