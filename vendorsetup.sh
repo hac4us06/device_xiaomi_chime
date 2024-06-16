@@ -8,6 +8,7 @@ git clone https://github.com/hac4us06/kernel-xiaomi-electro -b main kernel/xiaom
 # Setup kernel
 #(cd kernel/xiaomi/chime; git submodule init; git submodule update; sed -i 's/#ifdef CONFIG_KPROBES/#if 0/g' KernelSU/kernel/ksu.c)
 #(cd kernel/xiaomi/chime; cd KernelSU; git pull origin main; git reset --hard; cd ..; git add KernelSU)
+
 # Clone vendor
 git clone https://github.com/hac4us06/vendor_xiaomi_chime -b 13 vendor/xiaomi/chime
 git clone https://github.com/hac4us06/vendor_xiaomi_citrus -b 13 vendor/xiaomi/citrus

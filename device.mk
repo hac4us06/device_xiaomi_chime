@@ -17,6 +17,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
 
+# Inherit from proprietary files for QTI perf
+$(call inherit-product-if-exists, vendor/xiaomi/chime-perf/perf.mk)
+
 # Inherit custom packages configuration
 $(call inherit-product, device/xiaomi/chime/custom.mk)
 
@@ -340,9 +343,9 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_PACKAGES += \
     XiaomiParts
 
-# Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
+# Powerhint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # Permissions
 PRODUCT_COPY_FILES += \

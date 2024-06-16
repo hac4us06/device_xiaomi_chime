@@ -208,3 +208,7 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 include vendor/xiaomi/chime/BoardConfigVendor.mk
+
+
+# Inherit from proprietary files for QTI perf
+-include vendor/xiaomi/chime-perf/BoardConfigPerf.mk
