@@ -33,11 +33,11 @@ PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-im
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-   hardware/google/interfaces \
+    hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client \ 
-   hardware/xiaomi
+    hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/xiaomi
 
 # Product Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
