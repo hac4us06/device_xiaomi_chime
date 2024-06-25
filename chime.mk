@@ -27,6 +27,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_USE_PROFILE_FOR_BOOT_IMAGE := true
 PRODUCT_DEX_PREOPT_BOOT_IMAGE_PROFILE_LOCATION := frameworks/base/config/boot-image-profile.txt
 
+# A/B Update
+AB_OTA_UPDATER := false
+
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 30
 
