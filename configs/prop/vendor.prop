@@ -146,6 +146,7 @@ debug.sf.high_fps_late_sf_phase_offset_ns=-5000000
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
 debug.sf.predict_hwc_composition_strategy=0
+graphics.gpu.profiler.support=true
 persist.sys.sf.native_mode=1
 ro.config.avoid_gfx_accel=true
 ro.hardware.egl=adreno
