@@ -57,6 +57,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
+KERNEL_CC := CC=clang
 TARGET_KERNEL_CONFIG := vendor/xiaomi/bengal_defconfig vendor/xiaomi/chime.config
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
