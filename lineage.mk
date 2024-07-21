@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Halcyon stuff.
-$(call inherit-product, vendor/halcyon/config/common.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
