@@ -5,7 +5,7 @@ echo -e "${color}Applying patches${end}"
 sleep 1
 
 # Kernel
-git clone https://github.com/liliumproject/kernel_xiaomi_chime kernel/xiaomi/chime --depth=1
+git clone https://github.com/hac4us06/kernel-xiaomi-electro -b 14 kernel/xiaomi/chime --depth=1
 
 # Vendor
 git clone https://www.opencode.net/liliumproject/vendor_xiaomi_chime vendor/xiaomi/chime --depth=1
