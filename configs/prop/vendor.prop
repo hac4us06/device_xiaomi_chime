@@ -195,6 +195,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
+# Graphics
+debug.sdm.support_writeback=0
+
 # HWUI
 debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
