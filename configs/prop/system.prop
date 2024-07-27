@@ -1,8 +1,5 @@
 # Blur
 ro.launcher.blur.appLaunch=0
-ro.surface_flinger.supports_background_blur=1
-persist.sys.sf.disable_blurs=1
-ro.sf.blurs_are_expensive=0
 
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera,org.codeaurora.snapcam
