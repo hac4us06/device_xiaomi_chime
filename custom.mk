@@ -9,7 +9,7 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
-
+TARGET_NOT_USES_BLUR := true
 # Officials Flag
 DERP_BUILDTYPE := Official
 
