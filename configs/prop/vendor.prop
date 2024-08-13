@@ -183,6 +183,10 @@ ro.hardware.fp.sideCap=true
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# HWUI
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=30
+
 # Keystore
 ro.hardware.keystore_desede=true
 
