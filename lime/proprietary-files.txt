@@ -102,7 +102,7 @@ vendor/lib64/libjpege.so
 vendor/lib64/libmctfengine_stub.so
 vendor/lib64/libmiStereoFactoryRemapLib.so
 vendor/lib64/libmiai_supernight.so
-vendor/lib64/libmialgoengine.so
+vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
 vendor/lib64/libmibokeh_712.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libofflinelog.so
@@ -169,7 +169,7 @@ vendor/lib64/camera/components/com.qti.node.eisv3.so
 vendor/lib64/camera/components/com.qti.node.fcv.so
 vendor/lib64/camera/components/com.qti.node.gpu.so
 vendor/lib64/camera/components/com.qti.node.memcpy.so
-vendor/lib64/camera/components/com.qti.node.mialgocontrol.so
+vendor/lib64/camera/components/com.qti.node.mialgocontrol.so;DISABLE_CHECKELF
 vendor/lib64/camera/components/com.qti.node.realtimebokeh.so
 vendor/lib64/camera/components/com.qti.node.remosaic.so
 vendor/lib64/camera/components/com.qti.node.stich.so
