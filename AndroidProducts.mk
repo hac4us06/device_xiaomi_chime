@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_citrus.mk \
-    $(LOCAL_DIR)/halcyon_lime.mk
+    $(LOCAL_DIR)/derp_citrus.mk \
+    $(LOCAL_DIR)/derp_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    halcyon_citrus-user \
-    halcyon_citrus-userdebug \
-    halcyon_citrus-eng \
-    halcyon_lime-user \
-    halcyon_lime-userdebug \
-    halcyon_lime-eng
+    derp_citrus-user \
+    derp_citrus-userdebug \
+    derp_citrus-eng \
+    derp_lime-user \
+    derp_lime-userdebug \
+    derp_lime-eng
