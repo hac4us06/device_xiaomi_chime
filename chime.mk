@@ -495,7 +495,8 @@ PRODUCT_COPY_FILES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libpiex_shim
+    libpiex_shim \
+    libcrypto-v33
 
 # Telephony
 PRODUCT_PACKAGES += \
