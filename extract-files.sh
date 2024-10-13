@@ -24,6 +24,11 @@ export TARGET_ENABLE_CHECKELF=true
 # Can still be used with broken XML files by using blob_fixup
 export TARGET_DISABLE_XML_FIXING=true
 
+# Define the default patchelf version used to patch blobs
+# This will also be used for utility functions like FIX_SONAME
+# Older versions break some camera blobs for us
+export PATCHELF_VERSION=0_17_2
+
 HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
