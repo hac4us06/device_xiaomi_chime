@@ -4,10 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common genesis stuff.
-$(call inherit-product, vendor/genesis/config/common_full_phone.mk)
+# Inherit some common Halcyon stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-GENESIS_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_CALL_RECORDING := true
 
