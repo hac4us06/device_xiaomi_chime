@@ -63,6 +63,9 @@ function blob_fixup() {
                 sed -i "s|android.hardware.radio.config@${v}.so|android.hardware.radio.c_shim@${v}.so|g" "${2}"
             done
             ;;
+	vendor/lib/libwvhidl.so)
+	    "${PATCHELF}" --replace-needed libcrypto.so libcrypto-v34.so "${2}"
+	    ;;
     esac
 }
 
