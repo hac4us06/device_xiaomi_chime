@@ -90,6 +90,10 @@ function blob_fixup() {
             sed -i "s/0x10080/0/" "${2}"
             sed -i "s/0x1F/0x0/" "${2}"
             ;;
+        vendor/lib64/libgoodixhwfingerprint.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libvendor.goodix.hardware.biometrics.fingerprint@2.1.so" "vendor.goodix.hardware.biometrics.fingerprint@2.1.so" "${2}"
+            ;;
         *)
             return 1
             ;;
