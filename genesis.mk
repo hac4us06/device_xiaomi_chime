@@ -10,7 +10,7 @@ $(call inherit-product, vendor/genesis/config/common_full_phone.mk)
 GENESIS_OFFICIAL := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_CALL_RECORDING := true
-
+GENESIS_MAINTAINER := Ash
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
