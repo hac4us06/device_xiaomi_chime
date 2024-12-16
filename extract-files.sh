@@ -58,6 +58,9 @@ function blob_fixup() {
         vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy)
             echo 'madvise: 1' >> ${2}
             ;;
+	vendor/etc/seccomp_policy/atfwd@2.0.policy)
+	    echo 'gettid: 1' >> ${2}
+	    ;;
 	vendor/lib/libwvhidl.so)
 	    "${PATCHELF}" --replace-needed libcrypto.so libcrypto-v34.so "${2}"
 	    ;;
