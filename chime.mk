@@ -250,7 +250,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.chime
+    android.hardware.light-service.lineage
 
 PRODUCT_PACKAGES += \
     lights.qcom
