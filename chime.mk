@@ -492,6 +492,7 @@ PRODUCT_PACKAGES += \
     libtinyxml2
 
 # UFFD GC
+PRODUCT_ENABLE_UFFD_GC := false
 OVERRIDE_ENABLE_UFFD_GC := false
 
 # USB
