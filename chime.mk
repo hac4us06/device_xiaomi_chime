@@ -190,10 +190,8 @@ TARGET_SCREEN_HEIGHT := 2340
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v34/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v34.so
+    android.hardware.drm-service.clearkey \
+    libcrypto-v33
 
 # Fastboot - Dynamic Partition
 PRODUCT_PACKAGES += \
