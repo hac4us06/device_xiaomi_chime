@@ -14,8 +14,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/xiaomi/chime/chime-vendor.mk)
 
-# Inherit some common Halcyon stuff
-$(call inherit-product, device/xiaomi/chime/halcyon.mk)
+# Inherit some common Lineage stuff
+$(call inherit-product, device/xiaomi/chime/lineage.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
@@ -315,7 +315,6 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     libchrome.vendor \
     nfc_nci.st21nfc.default \
-    NfcNci \
     SecureElement \
     Tag
 
