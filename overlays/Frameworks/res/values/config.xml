@@ -943,4 +943,8 @@
     -->
     <string name="config_screenRecorderAVCProfileLevel" translatable="false">3.1</string>
 
+    <!-- media controls -->
+    <bool name="config_mediaControlsRippleByDefault">false</bool>
+    <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
+
 </resources>
