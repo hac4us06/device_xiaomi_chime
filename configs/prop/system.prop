@@ -1,36 +1,11 @@
-# Blur
-ro.launcher.blur.appLaunch=0
-
 # Camera
 persist.vendor.camera.privapp.list=com.android.camera,org.codeaurora.snapcam
-
-# Charger
-ro.charger.disable_init_blank=true
 
 # CNE
 persist.vendor.cne.feature=1
 
-# Dalvik
-dalvik.vm.dex2oat-cpu-set=4,5,6,7
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
-dalvik.vm.image-dex2oat-threads=4
-
-# Display
-debug.cpurend.vsync=false
-debug.sf.disable_backpressure=1
-debug.sf.auto_latch_unsignaled=0
-debug.sf.disable_client_composition_cache=1
-debug.sf.enable_hwc_vds=1
-debug.hwui.skia_atrace_enabled=false
-debug.hwui.skia_tracing_enabled=false
-debug.hwui.skia_use_perfetto_track_events=false
-
 # DPM
 persist.vendor.dpm.feature=1
-
-# Fingerprint
-ro.hardware.fp.sideCap=true
 
 # FWK Detect
 ro.vendor.qti.va_aosp.support=1
@@ -39,8 +14,6 @@ ro.vendor.qti.va_aosp.support=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=0
 persist.dbg.wfc_avail_ovr=1
-persist.vendor.radio.report_codec=1
-persist.vendor.radio.vdp_on_ims_cap=1
 
 # Log
 log.tag.CHIUSECASE=ERROR
@@ -58,32 +31,11 @@ persist.log.tag.SYNX-UMD=S
 persist.log.tag.ultrasound_extn=S
 persist.vendor.camera.logInfoMask=false
 
-# LMKD
-ro.lmk.log_stats=false
-ro.lmk.kill_heaviest_task=false
-ro.lmk.kill_timeout_ms=100
-ro.lmk.use_minfree_levels=true
-ro.lmk.critical_upgrade=true
-ro.lmk.upgrade_pressure=40
-ro.lmk.downgrade_pressure=60
-ro.lmk.filecache_min_kb=153600
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
-ro.lmk.stall_limit_critical=40
-
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
-media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.enable-aac=true
-media.stagefright.enable-fma2dp=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
-mmp.enable.3g2=true
 ro.media.recorder-max-base-layer-fps=60
 
 # Netflix
@@ -91,11 +43,6 @@ ro.netflix.bsp_rev=Q6115-31409-1
 
 # NFC
 ro.nfc.port=I2C
-
-# Radio
-persist.sys.fflag.override.settings_provider_model=false
-ril.subscription.types=NV,RUIM
-ro.telephony.default_network=22,20
 
 # Rescue Party
 persist.device_config.configuration.disable_rescue_party=true
