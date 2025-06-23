@@ -1136,6 +1136,10 @@ vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
+# Touchscreen Configuration (Focaltech)
+vendor/etc/focal/Conf_MultipleTest_FT8720M-01.ini
+vendor/etc/focal/focaltech_mp_fw_huaxing.ini
+
 # Touch Firmware
 vendor/firmware/aw87359_abrcv.bin
 vendor/firmware/aw87359_abspk.bin
