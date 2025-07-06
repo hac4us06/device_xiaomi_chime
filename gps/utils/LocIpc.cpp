@@ -307,12 +307,13 @@ public:
 class LocIpcRunnable : public LocRunnable {
     bool mAbortCalled;
     LocIpc& mLocIpc;
-    unique_ptr<LocIpcRecver> mIpcRecver;
+    std::unique_ptr<LocIpcRecver> mIpcRecver;
+
 public:
-    inline LocIpcRunnable(LocIpc& locIpc, unique_ptr<LocIpcRecver>& ipcRecver) :
+    inline LocIpcRunnable(LocIpc& locIpc, std::unique_ptr<LocIpcRecver>&& ipcRecver) :
             mAbortCalled(false),
             mLocIpc(locIpc),
-            mIpcRecver(move(ipcRecver)) {}
+            mIpcRecver(std::move(ipcRecver)) {}
     inline virtual bool run() override {
         if (mIpcRecver != nullptr) {
             mLocIpc.startBlockingListening(*(mIpcRecver.get()));
@@ -323,6 +324,7 @@ public:
         // return false so the calling thread exits while loop
         return false;
     }
+
     inline virtual void interrupt() override {
         mAbortCalled = true;
         if (mIpcRecver != nullptr) {
@@ -335,7 +337,7 @@ bool LocIpc::startNonBlockingListening(unique_ptr<LocIpcRecver>& ipcRecver) {
     if (ipcRecver != nullptr && ipcRecver->isRecvable()) {
         std::string threadName("LocIpc-");
         threadName.append(ipcRecver->getName());
-        return mThread.start(threadName.c_str(), make_shared<LocIpcRunnable>(*this, ipcRecver));
+        return mThread.start(threadName.c_str(), std::make_shared<LocIpcRunnable>(*this, std::move(ipcRecver)));
     } else {
         LOC_LOGe("ipcRecver is null OR ipcRecver->recvable() is fasle");
         return false;
