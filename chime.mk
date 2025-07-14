@@ -102,7 +102,8 @@ PRODUCT_COPY_FILES += \
 
 # Biomterics
 PRODUCT_PACKAGES += \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
+    com.fingerprints.extension@1.0.vendor:64
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -208,8 +209,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss@2.1-impl-qti \
+    android.hardware.gnss@2.1-service-qti \
     libloc_net_iface \
     libloc_net_iface.vendor \
     liblocdiagiface
@@ -475,13 +476,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     librmnetctl \
     libxml2
-
-PRODUCT_PACKAGES += \
-    android.hardware.radio.c_shim@1.0 \
-    android.hardware.radio.c_shim@1.1 \
-    android.hardware.radio.c_shim@1.2 \
-    android.hardware.radio.config@1.1-service.wrapper
-
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
