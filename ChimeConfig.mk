@@ -59,7 +59,6 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/chime
 TARGET_KERNEL_CONFIG := vendor/xiaomi/bengal_defconfig vendor/xiaomi/chime.config
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
-TARGET_KERNEL_ADDITIONAL_FLAGS := LLVM=1 LLVM_IAS=1
 
 # Platform
 TARGET_BOARD_PLATFORM := bengal
@@ -96,7 +95,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/vintf/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/halcyon/config/device_framework_matrix.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
