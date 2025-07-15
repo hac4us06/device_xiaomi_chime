@@ -12,6 +12,9 @@ include device/xiaomi/chime/ChimeConfig.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lime,lemon,pomelo,chime,juice
 
+# Kernel
+TARGET_KERNEL_CONFIG += vendor/xiaomi/lime.config
+
 # NFC
 ODM_MANIFEST_SKUS += lemon
 ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/vintf/manifest_lemon.xml
