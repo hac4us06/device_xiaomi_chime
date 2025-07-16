@@ -68,7 +68,6 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libstagefright_softomx_plugin.vendor \
     libtinycompress
 
 PRODUCT_COPY_FILES += \
@@ -318,15 +317,11 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-impl \
-    android.hardware.media.omx@1.0-service \
     libOmxCore \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
-    libstagefrighthw_omx \
-    libstagefrighthw_foundation \
-    libstagefright_omx.vendor
+    libc2dcolorconvert
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -431,8 +426,7 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
-    init.qti.dcvs.sh \
-    init.qti.media.sh
+    init.qti.dcvs.sh
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \
