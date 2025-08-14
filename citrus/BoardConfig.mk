@@ -12,6 +12,9 @@ include device/xiaomi/chime/ChimeConfig.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := citrus,chime,juice
 
+# Board
+TARGET_BOOTLOADER_BOARD_NAME := citrus
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/citrus.config
 
