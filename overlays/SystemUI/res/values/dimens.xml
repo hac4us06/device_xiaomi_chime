@@ -47,4 +47,13 @@
     <!-- Padding between signal cluster and battery icon -->
     <dimen name="signal_cluster_battery_padding">4.0dip</dimen>
 
+    <!-- Height of the status bar header bar when on Keyguard -->
+    <dimen name="status_bar_header_height_keyguard">@*android:dimen/status_bar_height</dimen>
+
+    <!-- The padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">2.5dp</dimen>
+
+    <!-- Padding for the lock icon on the keyguard. In pixels - should not scale with display size. -->
+    <dimen name="lock_icon_padding">30px</dimen>
+
 </resources>
