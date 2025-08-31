@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Halcyon stuff.
-$(call inherit-product, vendor/halcyon/config/common.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -15,3 +15,8 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+
+# Inherit common Voltage OS  Stuff.
+TARGET_BOOT_ANIMATION_RES := 1280
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true

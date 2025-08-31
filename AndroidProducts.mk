@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/halcyon_citrus.mk \
-    $(LOCAL_DIR)/halcyon_lime.mk
+    $(LOCAL_DIR)/voltage_citrus.mk \
+    $(LOCAL_DIR)/voltage_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    halcyon_citrus-user \
-    halcyon_citrus-userdebug \
-    halcyon_citrus-eng \
-    halcyon_lime-user \
-    halcyon_lime-userdebug \
-    halcyon_lime-eng
+    voltage_citrus-user \
+    voltage_citrus-userdebug \
+    voltage_citrus-eng \
+    voltage_lime-user \
+    voltage_lime-userdebug \
+    voltage_lime-eng
