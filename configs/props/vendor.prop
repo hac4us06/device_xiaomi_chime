@@ -132,11 +132,15 @@ ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v2
 
 # Display calibration
-ro.vendor.display.sensortype=2
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
 ro.vendor.display.svi=1
 vendor.display.idle_time=0
 vendor.display.svi.config=1
 vendor.display.svi.config_path=/vendor/etc/SVIConfig.xml
+vendor.display.enable_optimize_refresh=1
+vendor.display.primary_mixer_stages=9
 
 # DPM
 persist.vendor.dpmhalservice.enable=1
@@ -160,6 +164,12 @@ debug.egl.hw=0
 debug.hwui.skia_atrace_enabled=false
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+debug.sf.disable_client_composition_cache=1
+debug.sf.enable_gl_backpressure=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
 ro.hwui.render_ahead=20
 dev.pm.dyn_samplingrate=1
 ro.hardware.egl=adreno
