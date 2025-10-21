@@ -6,7 +6,7 @@
 
 # Don't forget to sign your builds:
 # https://gist.github.com/A2L5E0X1/54cb1b3a49030a9ebf8608b4e68073f5
-include vendor/lineage-priv/keys/keys.mk
+#include vendor/lineage-priv/keys/keys.mk
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
