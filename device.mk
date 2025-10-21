@@ -6,7 +6,7 @@
 
 # Don't forget to sign your builds:
 # https://gist.github.com/A2L5E0X1/54cb1b3a49030a9ebf8608b4e68073f5
-include vendor/lineage-priv/keys/keys.mk
+include vendor/derp-priv/keys/keys.mk
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
@@ -19,7 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
     hardware/google/pixel \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/derp/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
     hardware/xiaomi
 
@@ -209,12 +209,12 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1.vendor \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery \
-    vendor.lineage.health-service.default
+    vendor.derp.health-service.default
 
-$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
-$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
-$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
+$(call soong_config_set,derp_health,charging_control_charging_disabled,1)
+$(call soong_config_set,derp_health,charging_control_charging_enabled,0)
+$(call soong_config_set,derp_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
+$(call soong_config_set,derp_health,charging_control_supports_bypass,false)
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -243,11 +243,11 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.lineage
+    android.hardware.light-service.derp
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay-service.sdm
+    vendor.derp.livedisplay-service.sdm
 
 $(call soong_config_set,livedisplay_sdm,enable_dm,false)
 
@@ -342,7 +342,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-derp
 
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
@@ -360,7 +360,7 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client \
-    android.hardware.power-service.lineage-libperfmgr
+    android.hardware.power-service.derp-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
