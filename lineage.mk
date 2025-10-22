@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -16,7 +16,9 @@ $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
-# Inherit common Voltage OS  Stuff.
-TARGET_BOOT_ANIMATION_RES := 1280
-VOLTAGE_BUILD_TYPE := UNOFFICIAL
+#LineageOS
+TARGET_BOOT_ANIMATION_RES :=  1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := false
+DERPFEST_BUILD_TYPE := Official
+DERPFEST_BUILD_VARIANT := Stable

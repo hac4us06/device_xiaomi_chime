@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_citrus.mk \
-    $(LOCAL_DIR)/voltage_lime.mk
+    $(LOCAL_DIR)/lineage_citrus.mk \
+    $(LOCAL_DIR)/lineage_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_citrus-user \
-    voltage_citrus-userdebug \
-    voltage_citrus-eng \
-    voltage_lime-user \
-    voltage_lime-userdebug \
-    voltage_lime-eng
+    lineage_citrus-user \
+    lineage_citrus-userdebug \
+    lineage_citrus-eng \
+    lineage_lime-user \
+    lineage_lime-userdebug \
+    lineage_lime-eng
