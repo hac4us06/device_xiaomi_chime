@@ -33,6 +33,3 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 TARGET_ENABLE_BLUR := false
 
-# Set to true for building a ROM without GAPPS
-# Set to false for building a ROM with GAPPS included
-RESERVE_SPACE_FOR_GAPPS := true
