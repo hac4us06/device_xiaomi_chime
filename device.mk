@@ -34,11 +34,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     fs_config_files
 
-# ANT+
-PRODUCT_PACKAGES += \
-    AntHalService-Soong \
-    com.dsi.ant@1.0.vendor
-
 # APN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/overlays/CarrierConfig/etc/apns-conf.xml:system/etc/apns-conf.xml
@@ -295,7 +290,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
- 
+
 # MLIPay
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay@1.0.vendor \
@@ -321,6 +316,7 @@ PRODUCT_PACKAGES += \
     nfc_nci.st21nfc.default \
     SecureElement \
     Tag \
+
 #    NfcNci
 
 PRODUCT_COPY_FILES += \
@@ -364,6 +360,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
+
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # Dex
 ifeq ($(TARGET_BUILD_VARIANT),user)
