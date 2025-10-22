@@ -43,18 +43,15 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.r_submix.default \
-    audio.primary.qcom \
     audio.primary.default \
     audio.usb.default \
-    libaudio-resampler \
-    sound_trigger.primary.bengal
+    libaudio-resampler
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.service \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
@@ -94,10 +91,6 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml
 
 
-# Biomterics
-PRODUCT_PACKAGES += \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    com.fingerprints.extension@1.0.vendor:64
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -166,8 +159,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.1.vendor\
     gralloc.qcom \
-    hwcomposer.qcom \
-    libdisplayconfig \
     libqdMetaData \
     libqdMetaData.system \
     libsdmcore \
@@ -203,11 +194,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti \
-    libloc_net_iface \
-    libloc_net_iface.vendor \
-    liblocdiagiface
+    android.hardware.gnss@2.1-service-qti
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -254,9 +241,6 @@ PRODUCT_COPY_FILES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
-
-PRODUCT_PACKAGES += \
-    lights.qcom
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -472,7 +456,6 @@ PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-hidl-wrapper-prd \
-    qti_telephony_hidl_wrapper-prd.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
     telephony-ext \
@@ -499,8 +482,7 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.chime \
-    vendor.qti.hardware.vibrator-impl
+    vendor.qti.hardware.vibrator.service.chime
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
